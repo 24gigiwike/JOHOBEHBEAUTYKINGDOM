@@ -346,14 +346,6 @@ export default function App() {
                <p className="text-brand-purple/60 leading-relaxed mb-8">
                 mercyalo601@gmail.com | 08143489667
               </p>
-              <div className="flex gap-4">
-                <a href="#" className="w-10 h-10 rounded-full border border-brand-purple/10 flex items-center justify-center hover:bg-brand-gold hover:border-brand-gold hover:text-white transition-all">
-                  <Music2 className="w-5 h-5" />
-                </a>
-                <a href="#" className="w-10 h-10 rounded-full border border-brand-purple/10 flex items-center justify-center hover:bg-brand-gold hover:border-brand-gold hover:text-white transition-all">
-                  <Instagram className="w-5 h-5" />
-                </a>
-              </div>
             </div>
 
             <div>
@@ -397,10 +389,6 @@ export default function App() {
           
           <div className="flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-brand-purple/40 uppercase tracking-widest">
             <p>© 2026 JOHOBEH BEAUTY KINGDOM. All rights reserved.</p>
-            <div className="flex gap-8">
-              <a href="#" className="hover:text-brand-gold transition-colors">Privacy Policy</a>
-              <a href="#" className="hover:text-brand-gold transition-colors">Terms of Service</a>
-            </div>
           </div>
         </div>
       </footer>
