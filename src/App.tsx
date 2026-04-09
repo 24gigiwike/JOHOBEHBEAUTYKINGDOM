@@ -272,7 +272,7 @@ export default function App() {
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <span className="text-brand-gold uppercase tracking-[0.3em] text-xs font-bold mb-4 block">Visual Proof</span>
-            <h2 className="text-4xl md:text-6xl font-serif mb-6">The Gallery of Kings & Queens</h2>
+            <h2 className="text-4xl md:text-6xl font-serif mb-6">The Gallery of Queens</h2>
             <div className="w-24 h-1 bg-brand-gold mx-auto" />
           </div>
 
@@ -343,6 +343,9 @@ export default function App() {
                 Dedicated to the art of hair and the empowerment of our clients. 
                 Experience luxury that goes beyond the surface.
               </p>
+               <p className="text-brand-purple/60 leading-relaxed mb-8">
+                mercyalo601@gmail.com | 08143489667
+              </p>
               <div className="flex gap-4">
                 <a href="#" className="w-10 h-10 rounded-full border border-brand-purple/10 flex items-center justify-center hover:bg-brand-gold hover:border-brand-gold hover:text-white transition-all">
                   <Music2 className="w-5 h-5" />
@@ -359,8 +362,8 @@ export default function App() {
                 <div className="flex gap-4">
                   <MapPin className="w-5 h-5 text-brand-gold shrink-0" />
                   <p className="text-brand-purple/70">
-                    123 Luxury Lane, Royal District <br />
-                    Beauty Kingdom, BK 90210
+                   Lagos, <br />
+                    Nigeria
                   </p>
                 </div>
                 <div className="flex gap-4">
