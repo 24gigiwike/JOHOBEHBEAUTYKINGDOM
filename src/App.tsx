@@ -31,11 +31,56 @@ const services = [
 ];
 
 // Generate 47 gallery images
-const galleryImages = Array.from({ length: 47 }, (_, i) => ({
-  id: i + 1,
-  url: `https://picsum.photos/seed/hair-style-${i + 100}/800/1000`,
-  title: `Transformation ${i + 1}`
-}));
+const galleryImages = [
+  { id: 1, url: "https://res.cloudinary.com/dtkluxukm/image/upload/q_auto/f_auto/v1775727543/IMG-20251017-WA0081_axkek6.jpg", title: "Elegant Braids" },
+  { id: 2, url: "https://res.cloudinary.com/dtkluxukm/image/upload/q_auto/f_auto/v1775727542/IMG-20251017-WA0080_iod42h.jpg", title: "Golden Highlights" },
+  { id: 3, url: "https://res.cloudinary.com/dtkluxukm/image/upload/q_auto/f_auto/v1775727542/IMG-20251017-WA0079_szyhq8.jpg", title: "Royal Wig Install" },
+  { id: 4, url: "https://res.cloudinary.com/dtkluxukm/image/upload/q_auto/f_auto/v1775727542/IMG-20251017-WA0078_goeqlu.jpg", title: "Elegant Braids" },
+  { id: 5, url: "https://res.cloudinary.com/dtkluxukm/image/upload/q_auto/f_auto/v1775727541/IMG-20251017-WA0077_udzyzd.jpg", title: "Golden Highlights" },
+  { id: 6, url: "https://res.cloudinary.com/dtkluxukm/image/upload/q_auto/f_auto/v1775727541/IMG-20251017-WA0076_yrdozz.jpg", title: "Royal Wig Install" },
+  { id: 7, url: "https://res.cloudinary.com/dtkluxukm/image/upload/q_auto/f_auto/v1775727540/IMG-20251017-WA0075_rigppq.jpg", title: "Elegant Braids" },
+  { id: 8, url: "https://res.cloudinary.com/dtkluxukm/image/upload/q_auto/f_auto/v1775727540/IMG-20251017-WA0074_jslycb.jpg", title: "Golden Highlights" },
+  { id: 9, url: "https://res.cloudinary.com/dtkluxukm/image/upload/q_auto/f_auto/v1775727540/IMG-20251017-WA0073_q3zihl.jpg", title: "Royal Wig Install" },
+  { id: 10, url: "https://res.cloudinary.com/dtkluxukm/image/upload/q_auto/f_auto/v1775727539/IMG-20251017-WA0072_upvggn.jpg", title: "Elegant Braids" },
+  { id: 11, url: "https://res.cloudinary.com/dtkluxukm/image/upload/q_auto/f_auto/v1775727539/IMG-20251017-WA0071_dythvq.jpg", title: "Golden Highlights" },
+  { id: 12, url: "https://res.cloudinary.com/dtkluxukm/image/upload/q_auto/f_auto/v1775727538/IMG-20251017-WA0067_dpgaoa.jpg", title: "Royal Wig Install" },
+  { id: 13, url: "https://res.cloudinary.com/dtkluxukm/image/upload/q_auto/f_auto/v1775727538/IMG-20251017-WA0065_isajup.jpg", title: "Elegant Braids" },
+  { id: 14, url: "https://res.cloudinary.com/dtkluxukm/image/upload/q_auto/f_auto/v1775727537/IMG-20251017-WA0064_t8txx3.jpg", title: "Golden Highlights" },
+  { id: 15, url: "https://res.cloudinary.com/dtkluxukm/image/upload/q_auto/f_auto/v1775727537/IMG-20251017-WA0062_xcmm6s.jpg", title: "Royal Wig Install" },
+  { id: 16, url: "https://res.cloudinary.com/dtkluxukm/image/upload/q_auto/f_auto/v1775727536/IMG-20251017-WA0061_cjgywf.jpg", title: "Elegant Braids" },
+  { id: 17, url: "https://res.cloudinary.com/dtkluxukm/image/upload/q_auto/f_auto/v1775727536/IMG-20251017-WA0060_ieu1wp.jpg", title: "Golden Highlights" },
+  { id: 18, url: "https://res.cloudinary.com/dtkluxukm/image/upload/q_auto/f_auto/v1775727535/IMG-20251017-WA0059_kitiwe.jpg", title: "Royal Wig Install" },
+  { id: 19, url: "https://res.cloudinary.com/dtkluxukm/image/upload/q_auto/f_auto/v1775727535/IMG-20251017-WA0055_c9rfvr.jpg", title: "Elegant Braids" },
+  { id: 20, url: "https://res.cloudinary.com/dtkluxukm/image/upload/q_auto/f_auto/v1775727535/IMG-20251017-WA0057_v6sbux.jpg", title: "Golden Highlights" },
+  { id: 21, url: "https://res.cloudinary.com/dtkluxukm/image/upload/q_auto/f_auto/v1775727535/IMG-20251017-WA0054_eeiapt.jpg", title: "Royal Wig Install" },
+  { id: 22, url: "https://res.cloudinary.com/dtkluxukm/image/upload/q_auto/f_auto/v1775727535/IMG-20251017-WA0053_gdlsvz.jpg", title: "Elegant Braids" },
+  { id: 23, url: "https://res.cloudinary.com/dtkluxukm/image/upload/q_auto/f_auto/v1775727534/IMG-20251017-WA0051_glvvui.jpg", title: "Golden Highlights" },
+  { id: 24, url: "https://res.cloudinary.com/dtkluxukm/image/upload/q_auto/f_auto/v1775727534/IMG-20251017-WA0049_aylrhw.jpg", title: "Royal Wig Install" },
+  { id: 25, url: "https://res.cloudinary.com/dtkluxukm/image/upload/q_auto/f_auto/v1775727533/IMG-20251017-WA0048_u8jlbw.jpg", title: "Elegant Braids" },
+  { id: 26, url: "https://res.cloudinary.com/dtkluxukm/image/upload/q_auto/f_auto/v1775727532/IMG-20251017-WA0047_fcpjgq.jpg", title: "Golden Highlights" },
+  { id: 27, url: "https://res.cloudinary.com/dtkluxukm/image/upload/q_auto/f_auto/v1775727532/IMG-20251017-WA0045_zigloh.jpg", title: "Royal Wig Install" },
+  { id: 28, url: "https://res.cloudinary.com/dtkluxukm/image/upload/q_auto/f_auto/v1775727532/IMG-20251017-WA0044_s785zj.jpg", title: "Elegant Braids" },
+  { id: 29, url: "https://res.cloudinary.com/dtkluxukm/image/upload/q_auto/f_auto/v1775727531/IMG-20251017-WA0042_scgyoi.jpg", title: "Golden Highlights" },
+  { id: 30, url: "https://res.cloudinary.com/dtkluxukm/image/upload/q_auto/f_auto/v1775727531/IMG-20251017-WA0041_pujhmv.jpg", title: "Royal Wig Install" },
+  { id: 31, url: "https://res.cloudinary.com/dtkluxukm/image/upload/q_auto/f_auto/v1775727530/IMG-20251017-WA0040_vgidil.jpg", title: "Elegant Braids" },
+  { id: 32, url: "https://res.cloudinary.com/dtkluxukm/image/upload/q_auto/f_auto/v1775727530/IMG-20251017-WA0038_xmbq2y.jpg", title: "Golden Highlights" },
+  { id: 33, url: "https://res.cloudinary.com/dtkluxukm/image/upload/q_auto/f_auto/v1775727530/IMG-20251017-WA0037_ldlczl.jpg", title: "Royal Wig Install" },
+  { id: 34, url: "https://res.cloudinary.com/dtkluxukm/image/upload/q_auto/f_auto/v1775727529/IMG-20251017-WA0036_f0g2co.jpg", title: "Elegant Braids" },
+  { id: 35, url: "https://res.cloudinary.com/dtkluxukm/image/upload/q_auto/f_auto/v1775727528/IMG-20251017-WA0035_btm36j.jpg", title: "Golden Highlights" },
+  { id: 36, url: "https://res.cloudinary.com/dtkluxukm/image/upload/q_auto/f_auto/v1775727527/IMG-20251017-WA0034_rorbpb.jpg", title: "Royal Wig Install" },
+  { id: 37, url: "https://res.cloudinary.com/dtkluxukm/image/upload/q_auto/f_auto/v1775727526/IMG-20251017-WA0033_uwvph2.jpg", title: "Elegant Braids" },
+  { id: 38, url: "https://res.cloudinary.com/dtkluxukm/image/upload/q_auto/f_auto/v1775727526/IMG-20251017-WA0028_fy5auq.jpg", title: "Golden Highlights" },
+  { id: 39, url: "https://res.cloudinary.com/dtkluxukm/image/upload/q_auto/f_auto/v1775727526/IMG-20251017-WA0023_c8uhyh.jpg", title: "Royal Wig Install" },
+  { id: 40, url: "https://res.cloudinary.com/dtkluxukm/image/upload/q_auto/f_auto/v1775727525/IMG-20251017-WA0019_a9mdwg.jpg", title: "Elegant Braids" },
+  { id: 41, url: "https://res.cloudinary.com/dtkluxukm/image/upload/q_auto/f_auto/v1775727525/IMG-20251017-WA0017_bcrpme.jpg", title: "Golden Highlights" },
+  { id: 42, url: "https://res.cloudinary.com/dtkluxukm/image/upload/q_auto/f_auto/v1775727525/IMG-20251017-WA0015_ipmsis.jpg", title: "Royal Wig Install" },
+  { id: 43, url: "https://res.cloudinary.com/dtkluxukm/image/upload/q_auto/f_auto/v1775727525/IMG-20251017-WA0011_ili3p7.jpg", title: "Elegant Braids" },
+  { id: 44, url: "https://res.cloudinary.com/dtkluxukm/image/upload/q_auto/f_auto/v1775727525/IMG-20251017-WA0021_ohxgjo.jpg", title: "Golden Highlights" },
+  { id: 45, url: "https://res.cloudinary.com/dtkluxukm/image/upload/q_auto/f_auto/v1775727525/IMG-20251017-WA0013_v8xqjb.jpg", title: "Royal Wig Install" },
+  { id: 46, url: "https://res.cloudinary.com/dtkluxukm/image/upload/q_auto/f_auto/v1775727526/IMG-20251017-WA0024_peuyl1.jpg", title: "Elegant Braids" },
+  { id: 47, url: "https://res.cloudinary.com/dtkluxukm/image/upload/q_auto/f_auto/v1775727526/IMG-20251017-WA0028_fy5auq.jpg", title: "Golden Highlights" },
+  // ... add as many as you like (up to 47 or more)
+];
 
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
